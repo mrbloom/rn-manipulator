@@ -1,0 +1,55 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files\TSDuck\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Skype\Phone;C:\Windows\CCM;C:\Windows\CCM;C:\Windows\CCM;C:\Windows\CCM;C:\Windows\CCM;C:\Windows\CCM;C:\Windows\CCM;C:\Program Files\PuTTY;C:\Program Files\nodejs_811;C:\Program Files\Microsoft VS Code\bin;c:\usr\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Users\s.andriyaka\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\s.andriyaka\AppData\Local\Programs\Python\Python37-32\;C:\Users\s.andriyaka\.cargo\bin;C:\Users\s.andriyaka\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\s.andriyaka\AppData\Local\Programs\Python\Python36-32\;C:\Users\s.andriyaka\AppData\Local\Microsoft\WindowsApps;C:\Users\s.andriyaka\AppData\Local\Programs\Git\cmd;C:\Users\s.andriyaka\AppData\Roaming\npm
+
+Yarn version: 
+  1.19.0
+
+Node version: 
+  12.10.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/core-js/-/core-js-2.6.10.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141166:19)
+      at Object.onceWrapper (events.js:298:28)
+      at ClientRequest.emit (events.js:209:13)
+      at TLSSocket.emitRequestTimeout (_http_client.js:690:9)
+      at Object.onceWrapper (events.js:298:28)
+      at TLSSocket.emit (events.js:209:13)
+      at TLSSocket.Socket._onTimeout (net.js:468:8)
+      at listOnTimeout (internal/timers.js:531:17)
+      at processTimers (internal/timers.js:475:7)
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "^35.0.0",
+      "react": "16.8.3",
+      "react-dom": "16.8.3",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
+      "react-native-web": "^0.11.7"
+    },
+    "devDependencies": {
+      "babel-preset-expo": "^7.1.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
