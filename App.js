@@ -4,8 +4,8 @@ import { StyleSheet, View, FlatList, Button } from 'react-native';
 import GoalItem from './components/GoalItem';
 import GoalInput from './components/GoalInput';
 
-// import GyroscopeSensor from './components/GyroscopeSensor'
-// import AccelerometerSensor from './components/AccelerometerSensor'
+import GyroscopeSensor from './components/GyroscopeSensor'
+import AccelerometerSensor from './components/AccelerometerSensor'
 
 export default function App() {
 
@@ -19,7 +19,7 @@ export default function App() {
     setCourseGoals(currentGoals => [...courseGoals, { id: currentGoals.length + goalTitle + 1, value: goalTitle }]);
     console.log([courseGoals]);
     setIsAddMode(false);
-  };cd
+  };
 
   const removeGoalHandler = goalId => {
     console.log("to be deleted !!!", goalId);
@@ -41,8 +41,8 @@ export default function App() {
         data={courseGoals}
         renderItem={itemData => <GoalItem title={itemData.item.value} onDelete={removeGoalHandler.bind(this, itemData.item.id)} />}
       />
-      {/* <GyroscopeSensor />
-      <AccelerometerSensor /> */}
+      <GyroscopeSensor />
+      <AccelerometerSensor />
     </View>
 
   );
